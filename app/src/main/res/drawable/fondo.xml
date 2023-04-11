@@ -3,10 +3,7 @@
     android:shape="rectangle">
     <!--stroke width and color-->
     <solid
-        android:width="2sp"
-        android:color="#0C7238" />
+        android:width="1sp"
+        android:color="#F1EBEB" />
 
-    <!-- corner radius-->
-    <corners
-        android:radius="15sp" />
 </shape>

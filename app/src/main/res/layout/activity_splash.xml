@@ -4,7 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logoanimals"
+    android:background="@drawable/fondo"
     tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/animalslogo" />
+
+    <TextView
+        android:id="@+id/seppat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FROM SEPPAT SAS"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15sp"
+        />
 
 </RelativeLayout>

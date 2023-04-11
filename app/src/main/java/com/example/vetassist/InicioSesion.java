@@ -37,8 +37,8 @@ public class InicioSesion extends AppCompatActivity {
                 String Pass = Usuario.getText().toString();
 
                 // Comprobar que los campos de usuario y contraseña esten almacenados en la abse de datos
-                if (Usu.equals("Admin")) {
-                    Intent intent = new Intent(InicioSesion.this, MainActivity.class);
+                if (Usu.equals("Vendedor")) {
+                    Intent intent = new Intent(InicioSesion.this, Vendedor.class);
                     startActivity(intent);
                     finish();
                     Toast.makeText(InicioSesion.this, "Bienvenido a VetAssist.", Toast.LENGTH_LONG).show();

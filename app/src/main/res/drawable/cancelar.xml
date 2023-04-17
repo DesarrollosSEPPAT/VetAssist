@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Color del anillo -->
+    <solid android:color="#00000000" />
+
+    <!-- Grosor del anillo -->
+    <stroke
+        android:width="0sp"
+        android:color="#FF0000" />
+
+    <!-- Tamaño del anillo -->
+    <size
+        android:width="0sp"
+        android:height="0sp" />
+
+</shape>

@@ -120,11 +120,23 @@
             android:layout_gravity="center_horizontal" />
 
         <Button
-            android:id="@+id/continuar"
+            android:id="@+id/agregaritem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background2"
             android:layout_below="@id/sucursal"
+            android:layout_marginTop="50sp"
+            android:text="AGREGAR"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/continuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background2"
+            android:layout_below="@id/agregaritem"
             android:layout_marginTop="50sp"
             android:text="SIGUIENTE"
             android:textColor="@color/white"

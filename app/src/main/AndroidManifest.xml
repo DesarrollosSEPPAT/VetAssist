@@ -15,6 +15,14 @@
         android:theme="@style/Theme.Vetassist"
         tools:targetApi="31">
         <activity
+            android:name=".BaseDatosGoogleSheets"
+            android:exported="false" />
+        <activity
+            android:name=".tablas"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".CrearPedido"
             android:exported="false"
             android:screenOrientation="portrait"

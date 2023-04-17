@@ -7,12 +7,14 @@
     android:background="@drawable/fondo"
     tools:context=".Splash">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="300sp"
         android:layout_centerInParent="true"
-        android:src="@drawable/animalslogo" />
+        android:src="@drawable/logoanimado">
+
+    </pl.droidsonroids.gif.GifImageView>
 
     <TextView
         android:id="@+id/seppat"

@@ -20,13 +20,13 @@ public class InicioSesion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_inicio_sesion);
 
         // Relacionar los campos con los objetos del layout
         Usuario = findViewById(R.id.usuario);
         Contrasena = findViewById(R.id.contrasena);
         Acceder = findViewById(R.id.iniciarsesion);
+        BaseDeDatos db = new BaseDeDatos(this);
 
         Acceder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,10 +34,13 @@ public class InicioSesion extends AppCompatActivity {
 
                 // Capturar los valores de los campos de texto
                 String Usu = Usuario.getText().toString();
-                String Pass = Usuario.getText().toString();
+                String Pass = Contrasena.getText().toString();
+
+                // Evaluar si el usuario existe o no
+                Boolean resultado = db.validarUsuario(Usu,Pass);
 
                 // Comprobar que los campos de usuario y contraseña esten almacenados en la abse de datos
-                if (Usu.equals("Vendedor")) {
+                if (resultado == true) {
                     Intent intent = new Intent(InicioSesion.this, Vendedor.class);
                     startActivity(intent);
                     finish();
